@@ -1,7 +1,7 @@
 # # RmaOrderData
 
 
-## Properties
+## Properties 
 
 
 Name | Type | Description | Notes
@@ -13,10 +13,11 @@ Name | Type | Description | Notes
 **status**| **string** |   | [optional]
 **channel**| **string** |   | [optional]
 **market**| **string** |   | [optional]
-**items**| [**\GeminiCommerce\Rma\Model\RmaOrderDataItem[]**](RmaOrderDataItem.md) |   | [optional]
-**currency**| [**\GeminiCommerce\Rma\Model\RmaCurrency**](RmaCurrency.md) |  for more information please, see Model/RmaCurrency.php  | [optional]
-**subtotals**| [**array<string,\GeminiCommerce\Rma\Model\OrderDataSubtotal>**](OrderDataSubtotal.md) |   | [optional]
-**totals**| [**array<string,\GeminiCommerce\Rma\Model\OrderDataTotal>**](OrderDataTotal.md) |   | [optional]
+**items**| [**\OpenAPI\Client\Model\RmaOrderDataItem[]**](RmaOrderDataItem.md) |   | [optional]
+**currency**| [**\OpenAPI\Client\Model\RmaCurrency**](RmaCurrency.md) |  for more information please, see Model/RmaCurrency.php  | [optional]
+**subtotals**| [**array<string,\OpenAPI\Client\Model\OrderDataSubtotal>**](OrderDataSubtotal.md) |   | [optional]
+**totals**| [**array<string,\OpenAPI\Client\Model\OrderDataTotal>**](OrderDataTotal.md) |   | [optional]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
+

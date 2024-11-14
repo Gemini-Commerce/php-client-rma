@@ -1,4 +1,4 @@
-# GeminiCommerce\Rma\RmaApi
+# OpenAPI\Client\RmaApi
 
 All URIs are relative to https://rma.api.gogemini.io, except if the operation defines another base path.
 
@@ -23,7 +23,7 @@ All URIs are relative to https://rma.api.gogemini.io, except if the operation de
 ## `addNote()`
 
 ```php
-addNote($body): \GeminiCommerce\Rma\Model\RmaNoteResponse
+addNote($body): \OpenAPI\Client\Model\RmaNoteResponse
 ```
 
 Add a note to an RMA
@@ -36,13 +36,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaAddNoteRequest(); // \GeminiCommerce\Rma\Model\RmaAddNoteRequest
+$body = new \OpenAPI\Client\Model\RmaAddNoteRequest(); // \OpenAPI\Client\Model\RmaAddNoteRequest
 
 try {
     $result = $apiInstance->addNote($body);
@@ -56,11 +56,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaAddNoteRequest**](../Model/RmaAddNoteRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaAddNoteRequest**](../Model/RmaAddNoteRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Rma\Model\RmaNoteResponse**](../Model/RmaNoteResponse.md)
+[**\OpenAPI\Client\Model\RmaNoteResponse**](../Model/RmaNoteResponse.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ No authorization required
 ## `approveReturn()`
 
 ```php
-approveReturn($body): \GeminiCommerce\Rma\Model\RpcStatus
+approveReturn($body): \OpenAPI\Client\Model\RpcStatus
 ```
 
 Approve a return
@@ -91,13 +91,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaApproveReturnRequest(); // \GeminiCommerce\Rma\Model\RmaApproveReturnRequest
+$body = new \OpenAPI\Client\Model\RmaApproveReturnRequest(); // \OpenAPI\Client\Model\RmaApproveReturnRequest
 
 try {
     $result = $apiInstance->approveReturn($body);
@@ -111,11 +111,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaApproveReturnRequest**](../Model/RmaApproveReturnRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaApproveReturnRequest**](../Model/RmaApproveReturnRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Rma\Model\RpcStatus**](../Model/RpcStatus.md)
+[**\OpenAPI\Client\Model\RpcStatus**](../Model/RpcStatus.md)
 
 ### Authorization
 
@@ -146,13 +146,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaCancelReturnRequest(); // \GeminiCommerce\Rma\Model\RmaCancelReturnRequest
+$body = new \OpenAPI\Client\Model\RmaCancelReturnRequest(); // \OpenAPI\Client\Model\RmaCancelReturnRequest
 
 try {
     $result = $apiInstance->cancelReturn($body);
@@ -166,7 +166,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaCancelReturnRequest**](../Model/RmaCancelReturnRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaCancelReturnRequest**](../Model/RmaCancelReturnRequest.md)|  | |
 
 ### Return type
 
@@ -201,13 +201,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaConfirmReturnApproveItemsRequest(); // \GeminiCommerce\Rma\Model\RmaConfirmReturnApproveItemsRequest
+$body = new \OpenAPI\Client\Model\RmaConfirmReturnApproveItemsRequest(); // \OpenAPI\Client\Model\RmaConfirmReturnApproveItemsRequest
 
 try {
     $result = $apiInstance->confirmReturnApproveItems($body);
@@ -221,7 +221,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaConfirmReturnApproveItemsRequest**](../Model/RmaConfirmReturnApproveItemsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaConfirmReturnApproveItemsRequest**](../Model/RmaConfirmReturnApproveItemsRequest.md)|  | |
 
 ### Return type
 
@@ -243,7 +243,7 @@ No authorization required
 ## `createReturn()`
 
 ```php
-createReturn($body): \GeminiCommerce\Rma\Model\RmaReturnResponse
+createReturn($body): \OpenAPI\Client\Model\RmaReturnResponse
 ```
 
 Create a return
@@ -256,13 +256,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaCreateReturnRequest(); // \GeminiCommerce\Rma\Model\RmaCreateReturnRequest
+$body = new \OpenAPI\Client\Model\RmaCreateReturnRequest(); // \OpenAPI\Client\Model\RmaCreateReturnRequest
 
 try {
     $result = $apiInstance->createReturn($body);
@@ -276,11 +276,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaCreateReturnRequest**](../Model/RmaCreateReturnRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaCreateReturnRequest**](../Model/RmaCreateReturnRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Rma\Model\RmaReturnResponse**](../Model/RmaReturnResponse.md)
+[**\OpenAPI\Client\Model\RmaReturnResponse**](../Model/RmaReturnResponse.md)
 
 ### Authorization
 
@@ -311,13 +311,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaDeleteNoteRequest(); // \GeminiCommerce\Rma\Model\RmaDeleteNoteRequest
+$body = new \OpenAPI\Client\Model\RmaDeleteNoteRequest(); // \OpenAPI\Client\Model\RmaDeleteNoteRequest
 
 try {
     $result = $apiInstance->deleteNote($body);
@@ -331,7 +331,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaDeleteNoteRequest**](../Model/RmaDeleteNoteRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaDeleteNoteRequest**](../Model/RmaDeleteNoteRequest.md)|  | |
 
 ### Return type
 
@@ -353,7 +353,7 @@ No authorization required
 ## `editNote()`
 
 ```php
-editNote($body): \GeminiCommerce\Rma\Model\RmaNoteResponse
+editNote($body): \OpenAPI\Client\Model\RmaNoteResponse
 ```
 
 Edit a note on an RMA
@@ -366,13 +366,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaEditNoteRequest(); // \GeminiCommerce\Rma\Model\RmaEditNoteRequest
+$body = new \OpenAPI\Client\Model\RmaEditNoteRequest(); // \OpenAPI\Client\Model\RmaEditNoteRequest
 
 try {
     $result = $apiInstance->editNote($body);
@@ -386,11 +386,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaEditNoteRequest**](../Model/RmaEditNoteRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaEditNoteRequest**](../Model/RmaEditNoteRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Rma\Model\RmaNoteResponse**](../Model/RmaNoteResponse.md)
+[**\OpenAPI\Client\Model\RmaNoteResponse**](../Model/RmaNoteResponse.md)
 
 ### Authorization
 
@@ -408,7 +408,7 @@ No authorization required
 ## `getReturn()`
 
 ```php
-getReturn($body): \GeminiCommerce\Rma\Model\RmaReturnResponse
+getReturn($body): \OpenAPI\Client\Model\RmaReturnResponse
 ```
 
 Get a return
@@ -421,13 +421,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaGetReturnRequest(); // \GeminiCommerce\Rma\Model\RmaGetReturnRequest
+$body = new \OpenAPI\Client\Model\RmaGetReturnRequest(); // \OpenAPI\Client\Model\RmaGetReturnRequest
 
 try {
     $result = $apiInstance->getReturn($body);
@@ -441,11 +441,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaGetReturnRequest**](../Model/RmaGetReturnRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaGetReturnRequest**](../Model/RmaGetReturnRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Rma\Model\RmaReturnResponse**](../Model/RmaReturnResponse.md)
+[**\OpenAPI\Client\Model\RmaReturnResponse**](../Model/RmaReturnResponse.md)
 
 ### Authorization
 
@@ -463,7 +463,7 @@ No authorization required
 ## `listNotesByReturnId()`
 
 ```php
-listNotesByReturnId($body): \GeminiCommerce\Rma\Model\RmaListNotesByReturnIdResponse
+listNotesByReturnId($body): \OpenAPI\Client\Model\RmaListNotesByReturnIdResponse
 ```
 
 List notes by return id
@@ -476,13 +476,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaListNotesByReturnIdRequest(); // \GeminiCommerce\Rma\Model\RmaListNotesByReturnIdRequest
+$body = new \OpenAPI\Client\Model\RmaListNotesByReturnIdRequest(); // \OpenAPI\Client\Model\RmaListNotesByReturnIdRequest
 
 try {
     $result = $apiInstance->listNotesByReturnId($body);
@@ -496,11 +496,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaListNotesByReturnIdRequest**](../Model/RmaListNotesByReturnIdRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaListNotesByReturnIdRequest**](../Model/RmaListNotesByReturnIdRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Rma\Model\RmaListNotesByReturnIdResponse**](../Model/RmaListNotesByReturnIdResponse.md)
+[**\OpenAPI\Client\Model\RmaListNotesByReturnIdResponse**](../Model/RmaListNotesByReturnIdResponse.md)
 
 ### Authorization
 
@@ -518,7 +518,7 @@ No authorization required
 ## `listReturns()`
 
 ```php
-listReturns($body): \GeminiCommerce\Rma\Model\RmaListReturnsResponse
+listReturns($body): \OpenAPI\Client\Model\RmaListReturnsResponse
 ```
 
 List returns
@@ -531,13 +531,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaListReturnsRequest(); // \GeminiCommerce\Rma\Model\RmaListReturnsRequest
+$body = new \OpenAPI\Client\Model\RmaListReturnsRequest(); // \OpenAPI\Client\Model\RmaListReturnsRequest
 
 try {
     $result = $apiInstance->listReturns($body);
@@ -551,11 +551,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaListReturnsRequest**](../Model/RmaListReturnsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaListReturnsRequest**](../Model/RmaListReturnsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Rma\Model\RmaListReturnsResponse**](../Model/RmaListReturnsResponse.md)
+[**\OpenAPI\Client\Model\RmaListReturnsResponse**](../Model/RmaListReturnsResponse.md)
 
 ### Authorization
 
@@ -586,13 +586,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaRefundReturnRequest(); // \GeminiCommerce\Rma\Model\RmaRefundReturnRequest
+$body = new \OpenAPI\Client\Model\RmaRefundReturnRequest(); // \OpenAPI\Client\Model\RmaRefundReturnRequest
 
 try {
     $result = $apiInstance->refundReturn($body);
@@ -606,7 +606,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaRefundReturnRequest**](../Model/RmaRefundReturnRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaRefundReturnRequest**](../Model/RmaRefundReturnRequest.md)|  | |
 
 ### Return type
 
@@ -641,13 +641,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaRejectReturnRequest(); // \GeminiCommerce\Rma\Model\RmaRejectReturnRequest
+$body = new \OpenAPI\Client\Model\RmaRejectReturnRequest(); // \OpenAPI\Client\Model\RmaRejectReturnRequest
 
 try {
     $result = $apiInstance->rejectReturn($body);
@@ -661,7 +661,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaRejectReturnRequest**](../Model/RmaRejectReturnRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaRejectReturnRequest**](../Model/RmaRejectReturnRequest.md)|  | |
 
 ### Return type
 
@@ -696,13 +696,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaSetReceivedItemsRequest(); // \GeminiCommerce\Rma\Model\RmaSetReceivedItemsRequest
+$body = new \OpenAPI\Client\Model\RmaSetReceivedItemsRequest(); // \OpenAPI\Client\Model\RmaSetReceivedItemsRequest
 
 try {
     $result = $apiInstance->setReceivedItems($body);
@@ -716,7 +716,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaSetReceivedItemsRequest**](../Model/RmaSetReceivedItemsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaSetReceivedItemsRequest**](../Model/RmaSetReceivedItemsRequest.md)|  | |
 
 ### Return type
 
@@ -751,13 +751,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new GeminiCommerce\Rma\Api\RmaApi(
+$apiInstance = new OpenAPI\Client\Api\RmaApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Rma\Model\RmaSkipReturnStatusRequest(); // \GeminiCommerce\Rma\Model\RmaSkipReturnStatusRequest
+$body = new \OpenAPI\Client\Model\RmaSkipReturnStatusRequest(); // \OpenAPI\Client\Model\RmaSkipReturnStatusRequest
 
 try {
     $result = $apiInstance->skipReturnStatus($body);
@@ -771,7 +771,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Rma\Model\RmaSkipReturnStatusRequest**](../Model/RmaSkipReturnStatusRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\RmaSkipReturnStatusRequest**](../Model/RmaSkipReturnStatusRequest.md)|  | |
 
 ### Return type
 

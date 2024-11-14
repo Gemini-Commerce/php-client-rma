@@ -1,7 +1,7 @@
 # # RmaListNotesByReturnIdRequest
 
 
-## Properties
+## Properties 
 
 
 Name | Type | Description | Notes
@@ -10,7 +10,8 @@ Name | Type | Description | Notes
 **return_id**| **string** |   |
 **page_size**| **int** |   | [optional]
 **page_token**| **string** |   | [optional]
-**sorts**| [**\GeminiCommerce\Rma\Model\RmaListNotesByReturnIdRequestSort[]**](RmaListNotesByReturnIdRequestSort.md) |   | [optional]
+**sorts**| [**\OpenAPI\Client\Model\RmaListNotesByReturnIdRequestSort[]**](RmaListNotesByReturnIdRequestSort.md) |   | [optional]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
+
